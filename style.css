@@ -1,87 +1,132 @@
-/*
-selector {
-    propiedad: valor !important;
-}
-*/
-
-/* Header */
-.nav-item .nav-link .navbar-brand{
-    transition: background-color 0.3s, color 0.3s;
-    /* Suaviza la transición de los cambios */
+*{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.nav-blue .nav-link:hover{
-    background-color: #001E6C;
-    color: #ffffff;
+body{
+    margin: 0px;
 }
 
-.navbar-brand:hover{
-    color:#001E6C;
+#perfil{
+    border-radius: 50%;
 }
 
-.nav-red .nav-link:hover {
-    background-color: #C80036;
-    color: #ffffff;
+figure{
+    width: 20px;
+    margin: 0px;
+    padding: 12px;
 }
 
-.nav-yellow .nav-link:hover {
-    background-color: #FCD900;
-    color: #000;
+#cuadro{
+    width: 20px;
 }
 
-
-
-#presentacion {
-    height: 70vh;
+footer div{
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
+}
+
+ul li{
+    display: inline-block;
+    padding: 15px;
+}
+
+ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+footer p{
+    padding: 15px;
+    margin: 0px;
+    border-bottom: 1px solid #dadce0;
+}
+
+nav{
+    display: flex;
+    justify-content: end;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    height: 82vh;
+}
+
+#logo{
+    margin-top: 10vh;
+    height: 200px;
+}
+
+#buscador {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #dadce0;
+    align-items: stretch;
+    height: 45px;
+    width: 572px;
+    border-radius: 25px;
+    margin: 25px 0px;
+}
+
+#buscador:hover {    
+    background: #fff;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+    border-color: transparent;
+}
+
+#buscador input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+}
+
+
+article{
+    text-align: center;
+}
+
+footer{
+    background: #f2f2f2;
+}
+
+button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    padding: 0 16px;
+    margin: 9px 4px;
+    height: 36px;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 4px;
+}
+
+button:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header a {
+    font-size: 13px;
+    color: #1f1f1f;
+}
+footer a {
+    font-size: 14px;
+    color: #202124;;
+}
+
+header ul{
+    display: flex;
     align-items: center;
-
-    background-image: url(assets/pietf.png);
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-size: cover;
-}
-
-.custom-blue {
-    color: #001E6C; /* Azul personalizado */
-}
-
-.custom-red {
-    color: #C80036; /* Rojo personalizado */
-}
-
-.custom-yellow {
-    color: #FCD900; /* Amarillo personalizado */
-}
-
-
-.proyecto {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-#proyecto-1 {
-    background-image: url('/portafolio/assets/googleClon.png');
-}
-
-#proyecto-2 {
-    background-image: url('/portafolio/assets/colegio.png');
-}
-
-#proyecto-3 {
-    background-image: url('google.png');
-}
-
-.text-shadow-1 {
-    text-shadow: 1px -1px 8px rgba(0, 0, 0, 1);
-}
-
-.bg-brand {
-    background-color: blueviolet;
-}
-
-.text-brand {
-    color: blueviolet;
 }
