@@ -11,13 +11,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" >
             <div class="container">
                 <a class="navbar-brand" href="#presentacion">Sofía</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -26,16 +27,16 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
+                        <li class="nav-item nav-red">
                             <a class="nav-link active" aria-current="page" href="#habilidades">Habilidades</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item nav-yellow ">
                             <a class="nav-link" href="#proyectos">Proyectos</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item nav-blue">
                             <a class="nav-link" href="#testimonios">Testimonios</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item nav-red">
                             <a class="nav-link" href="#contacto">Contacto</a>
                         </li>
                     </ul>
@@ -46,19 +47,16 @@
 
     <main>
 
-        <section id="presentacion" class="container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <!-- <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
-                        width="700" height="500" loading="lazy">
-                </div> -->
-                <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Ana Sofía Rodríguez
-                    </h1>
-                    <p class="lead">A computer science student passionate about web development and UX/UI design. I specialize in creating innovative digital solutions that transform ideas into interactive experiences. I am always looking to learn and improve my skills, and I enjoy collaborating to create high-quality products.</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Contact me</button>
-                        <button type="button" class="btn btn-outline-secondary btn-lg px-4">sofiana9024@gmai.com</button>
+        <section id="presentacion" class="container-fluid">
+            <div class="container col-xxl-8 px-4 py-5  d-flex justify-content-center align-items-center">
+                <div class="row flex-lg-row align-items-center g-5 py-5 my-5">
+                    <div class="col-lg-6">
+                        <h1 id="app" class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Ana Sofía Rodríguez</h1>
+                        <p class="lead">A computer science student passionate about web development and UX/UI design. I specialize in creating innovative digital solutions that transform ideas into interactive experiences. I am always looking to learn and improve my skills, and I enjoy collaborating to create high-quality products.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <button type="button" class="btn btn-dark btn-lg px-4 me-md-2">Contact me</button>
+                            <button type="button" class="btn btn-outline-dark    btn-lg px-4">sofiana9024@gmai.com</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -69,8 +67,8 @@
             <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
                 <div class="feature col">   
                     <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-primary bg-primary-subtle fs-2 px-3 py-2 rounded-4">
-                        <i class="bi bi-border-style"></i>
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-primary  fs-2 px-3 py-2 rounded-4">
+                        <i class="bi bi-border-style custom-blue"></i>
                     </div>
                     <h3 class="fs-2 text-body-emphasis">Web Development</h3>
                     <p>Extensive knowledge in HTML5, CSS3, and technologies such as Bootstrap</p>
@@ -78,8 +76,8 @@
 
                 <div class="feature col">
                     <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-primary bg-primary-subtle fs-2 px-3 py-2 rounded-4">
-                        <i class="bi bi-people-fill"></i>
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-primary  fs-2 px-3 py-2 rounded-4">
+                        <i class="bi bi-people-fill custom-red"></i>
                     </div>
                     <h3 class="fs-2 text-body-emphasis">Agile Methodologies</h3>
                     <p>I have experience applying Agile principles such as Scrum and Design Thinking to manage projects efficiently and adaptively.</p>
@@ -87,8 +85,8 @@
 
                 <div class="feature col">
                     <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-primary bg-primary-subtle fs-2 px-3 py-2 rounded-4">
-                        <i class="bi bi-code-slash"></i>    
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-primary  fs-2 px-3 py-2 rounded-4">
+                        <i class="bi bi-code-slash custom-yellow"></i>    
                     </div>
                     <h3 class="fs-2 text-body-emphasis">Programming Languages</h3>
                     <p>Knowledge in various languages such as JavaScript, Java, Python, SQL and C.</p>
@@ -119,14 +117,17 @@
                 <div class="col">
                     <div id="proyecto-2" class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg proyecto">
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Educational Resource Management System</h3>
-                            <ul class="d-flex list-unstyled mt-auto">
-                                <li class="mx-auto">
-                                    <a class="link-light" href="https://clon-google-phi.vercel.app/" target="_blank" rel="noopener noreferrer">
-                                        Click here
-                                    </a>
-                                </li>
-                            </ul>
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Resource Management System</h3>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div id="proyecto-2" class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg proyecto">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Resource Management System</h3>
+                            
                         </div>
                     </div>
                 </div>
@@ -134,8 +135,8 @@
             </div>
         </section>
 
-        <section id="testimonios">
-            <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <section id="testimonios" class="mb-5">
+            <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="dark">
                 <!-- Los puntitos para ndicar la cantidad de elementos en el carrusel -->
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
@@ -145,48 +146,56 @@
                     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
                         class="active" aria-current="true"></button>
                 </div>
+
+                <!-- Contenido del carrusel -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                        </svg>
+                        <div class="text-center">
+                            <img src="assets/tyler.jpg" class="opacity-75 rounded-4" height="500px" alt="Tyler joseph">
+                        </div>
+                        
                         <div class="container">
-                            <div class="carousel-caption text-start">
-                                <h1>Example headline.</h1>
-                                <p class="opacity-75">Some representative placeholder content for the first slide of the
-                                    carousel.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                            <div class="carousel-caption ">
+                                <h1>Tyler joseph</h1>
+                                <p class="opacity-75">
+                                    "He visitado esta página web y estoy impresionado por su diseño y contenido. La navegación es intuitiva, y la creatividad se refleja en cada sección. Es evidente el esfuerzo por conectar de manera auténtica con la audiencia, combinando tecnología y arte de forma excepcional. Sin duda, un trabajo inspirador." – Tyler Joseph, vocalista de Twenty One Pilots.
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                        </svg>
+
+                    <div class="carousel-item ">
+                        <div class="text-center">
+                            <img src="assets/tyler.jpg" class="opacity-75 rounded-4" height="500px" alt="Tyler joseph">
+                        </div>
+                        
                         <div class="container">
-                            <div class="carousel-caption">
-                                <h1>Another example headline.</h1>
-                                <p>Some representative placeholder content for the second slide of the carousel.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                            <div class="carousel-caption ">
+                                <h1>Tyler joseph</h1>
+                                <p class="opacity-75">
+                                    "He visitado esta página web y estoy impresionado por su diseño y contenido. La navegación es intuitiva, y la creatividad se refleja en cada sección. Es evidente el esfuerzo por conectar de manera auténtica con la audiencia, combinando tecnología y arte de forma excepcional. Sin duda, un trabajo inspirador." – Tyler Joseph, vocalista de Twenty One Pilots.
+                                </p>
                             </div>
                         </div>
                     </div>
+
                     <div class="carousel-item">
-                        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                        </svg>
+                        <div class="text-center">
+                            <img src="assets/tyler.jpg" class="opacity-75 rounded-4" height="500px" alt="Tyler joseph">
+                        </div>
+                        
                         <div class="container">
-                            <div class="carousel-caption text-end">
-                                <h1>One more for good measure.</h1>
-                                <p>Some representative placeholder content for the third slide of this carousel.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                            <div class="carousel-caption ">
+                                <h1>Tyler joseph</h1>
+                                <p class="opacity-75">
+                                    "He visitado esta página web y estoy impresionado por su diseño y contenido. La navegación es intuitiva, y la creatividad se refleja en cada sección. Es evidente el esfuerzo por conectar de manera auténtica con la audiencia, combinando tecnología y arte de forma excepcional. Sin duda, un trabajo inspirador." – Tyler Joseph, vocalista de Twenty One Pilots.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Los botones para pasar de imagen -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -231,6 +240,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

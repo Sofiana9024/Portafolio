@@ -4,21 +4,72 @@ selector {
 }
 */
 
+/* Header */
+.nav-item .nav-link .navbar-brand{
+    transition: background-color 0.3s, color 0.3s;
+    /* Suaviza la transición de los cambios */
+}
+
+.nav-blue .nav-link:hover{
+    background-color: #001E6C;
+    color: #ffffff;
+}
+
+.navbar-brand:hover{
+    color:#001E6C;
+}
+
+.nav-red .nav-link:hover {
+    background-color: #C80036;
+    color: #ffffff;
+}
+
+.nav-yellow .nav-link:hover {
+    background-color: #FCD900;
+    color: #000;
+}
+
+
+
 #presentacion {
     height: 70vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    background-image: url(assets/pietf.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
 }
+
+.custom-blue {
+    color: #001E6C; /* Azul personalizado */
+}
+
+.custom-red {
+    color: #C80036; /* Rojo personalizado */
+}
+
+.custom-yellow {
+    color: #FCD900; /* Amarillo personalizado */
+}
+
 
 .proyecto {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+
 #proyecto-1 {
     background-image: url('/portafolio/assets/googleClon.png');
 }
+
 #proyecto-2 {
     background-image: url('/portafolio/assets/colegio.png');
 }
+
 #proyecto-3 {
     background-image: url('google.png');
 }
