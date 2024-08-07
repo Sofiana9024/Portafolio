@@ -4,80 +4,274 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Google</title>
-    <link rel="shortcut icon" href="google.webp" type="image/x-icon">
+
+    <title>Sofía Rodríguez</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <header>
-        <nav>
-            <ul>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">Gmail</a></li>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">Imágenes</a></li>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">
-                        <svg id="cuadro" class="gb_h" focusable="false" viewBox="0 0 24 24">
-                            <path
-                                d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z">
-                            </path>
-                            <image src="https://ssl.gstatic.com/gb/images/bar/al-icon.png" alt="" height="24" width="24"
-                                style="border:none;display:none \9"></image>
-                        </svg>
-                    </a></li>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/perfil.png" alt="Foto de perfil" id="perfil">
-                </a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#presentacion">Sofía</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item nav-red">
+                            <a class="nav-link active" aria-current="page" href="#habilidades">Skills</a>
+                        </li>
+                        <li class="nav-item nav-yellow ">
+                            <a class="nav-link" href="#proyectos">Projects</a>
+                        </li>
+                        <li class="nav-item nav-blue">
+                            <a class="nav-link" href="#testimonios">Testimonials</a>
+                        </li>
+                        <li class="nav-item nav-red">
+                            <a class="nav-link" href="#contacto">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <article>
-            <div>
-                <img id="logo" src="assets/googleDayDead.gif" alt="Logo google">
+
+        <section id="presentacion" class="container-fluid">
+            <div class="container col-xxl-8 px-4 py-5  d-flex justify-content-center align-items-center">
+                <div class="row flex-lg-row align-items-center g-5 py-5 my-5">
+                    <div class="col-lg-6">
+                        <h1 id="app" class="display-5 fw-bold text-body-emphasis lh-1 mb-3"></h1>
+                        <p class="lead">A computer science student passionate about web development and design. I
+                            specialize in creating innovative digital solutions that transform ideas into interactive
+                            experiences. I am always looking to learn and improve my skills, and I enjoy collaborating
+                            to create high-quality products.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <button type="button" class="btn btn-dark btn-lg px-4 me-md-2">Contact me</button>
+                            <button type="button"
+                                class="btn btn-outline-dark    btn-lg px-4">sofiana9024@gmail.com</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="buscador">
-                <figure>
-                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
-                </figure> 
-    
-                <input type="text" name="buscar" id="buscar">
-    
-                <figure>
-                    <svg class="goxjub" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#4285f4" d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z"></path><path fill="#34a853" d="m11 18.08h2v3.92h-2z"></path><path fill="#fbbc04" d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z"></path><path fill="#ea4335" d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z"></path></svg>
-                </figure>
-    
-                <figure>
-                    <svg class="Gdd5U" focusable="false" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg"><rect fill="none" height="192" width="192"></rect><g><circle fill="#34a853" cx="144.07" cy="144" r="16"></circle><circle fill="#4285f4" cx="96.07" cy="104" r="24"></circle><path fill="#ea4335" d="M24,135.2c0,18.11,14.69,32.8,32.8,32.8H96v-16l-40.1-0.1c-8.8,0-15.9-8.19-15.9-17.9v-18H24V135.2z"></path><path fill="#fbbc04" d="M168,72.8c0-18.11-14.69-32.8-32.8-32.8H116l20,16c8.8,0,16,8.29,16,18v30h16V72.8z"></path><path fill="#4285f4" d="M112,24l-32,0L68,40H56.8C38.69,40,24,54.69,24,72.8V92h16V74c0-9.71,7.2-18,16-18h80L112,24z"></path></g></svg>
-                </figure>
+        </section>
+
+        <section id="habilidades" class="container px-4 py-5">
+            <h2 class="pb-2 border-bottom">Skills</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-primary  fs-2 px-3 py-2 rounded-4">
+                        <i class="bi bi-border-style custom-blue"></i>
+                    </div>
+                    <h3 class="fs-2 text-body-emphasis">Web Development</h3>
+                    <p>I have strong skills in HTML5 and CSS3 for building modern, responsive web pages. I also have experience with Bootstrap, using its grid system and components to create user-friendly designs.</p>
+                </div>
+
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-primary  fs-2 px-3 py-2 rounded-4">
+                        <i class="bi bi-people-fill custom-red"></i>
+                    </div>
+                    <h3 class="fs-2 text-body-emphasis">Agile Methodologies</h3>
+                    <p>I have experience applying Agile principles, including Scrum and Design Thinking, to manage projects efficiently and adaptively. I am also skilled at drafting clear and comprehensive documentation to support project development and ensure effective communication within the team.</p>
+                </div>
+
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center text-primary fs-2 px-3 py-2 rounded-4">
+                        <i class="bi bi-code-slash custom-yellow"></i>
+                    </div>
+                    <h3 class="fs-2 text-body-emphasis">Programming Languages</h3>
+                    <p>I am proficient in JavaScript, Java, Python, SQL, and C. This allows me to handle diverse development tasks, from building web applications to managing databases and optimizing performance.</p>
+                </div>
             </div>
-            <div>
-                <button>Buscar con Google</button>
-                <button>Voy a tener suerte</button>
+        </section>
+
+        <section id="proyectos" class="container px-4 py-5">
+            <h2 class="pb-2 border-bottom">Projects</h2>
+
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div id="proyecto-1"
+                        class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg proyecto">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Google Clone</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="mx-auto">
+                                    <a class="link-light" href="https://clon-google-phi.vercel.app/" target="_blank"
+                                        rel="noopener noreferrer">
+                                        Click here
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div id="proyecto-2"
+                        class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg proyecto">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Pinterest Clone</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="mx-auto">
+                                    <a class="link-light" href="https://clon-pinterest-fawn.vercel.app/" target="_blank"
+                                        rel="noopener noreferrer">
+                                        Click here
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div id="proyecto-3"
+                        class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg proyecto">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Resource Management System</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="mx-auto">
+                                    <a class="link-light"
+                                        href="https://github.com/Sofiana9024/ProyectoAlianza/tree/master/JavaApplication18"
+                                        target="_blank" rel="noopener noreferrer">
+                                        Click here
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </article>
+        </section>
+
+        <section id="testimonios" class="mb-5">
+            
+            <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="dark">
+                <!-- Los puntitos para ndicar la cantidad de elementos en el carrusel -->
+                <div class="carousel-indicators">
+                    
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
+                        aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                        class=""></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+                        class="active" aria-current="true"></button>
+                </div>
+                
+                <!-- Contenido del carrusel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="text-center">
+                            <img src="assets/mon.png" class="opacity-75 rounded-4" height="500px" alt="Tyler joseph">
+                        </div>
+
+                        <div class="container">
+                            <div class="carousel-caption ">
+                                <h1>Monserrat Estrada</h1>
+                                <p class="opacity-75">
+                                    "I have had the pleasure of working with Sofía on several projects, and she is an exceptional professional. She consistently shows a strong work ethic, attention to detail, and effective collaboration skills. Sofía is organized, prioritizes tasks well, and manages time efficiently. Her creativity and problem-solving skills lead to innovative solutions. Her proactive approach, commitment to high-quality results, and reliability make her a valuable team member and a joy to work with."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item ">
+                        <div class="text-center">
+                            <img src="assets/litzi.png" class="opacity-75 rounded-4" height="500px" alt="Tyler joseph">
+                        </div>
+
+                        <div class="container">
+                            <div class="carousel-caption ">
+                                <h1>Litzi S</h1>
+                                <p class="opacity-75">
+                                    "Sofía has demonstrated that she is a responsible and very creative student throughout the course. Her interest in learning motivates her to improve with each project she undertakes." - Technical Mentor at TecnolochicasPRO
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="text-center">
+                            <img src="assets/tyler.jpg" class="opacity-75 rounded-4" height="500px" alt="Tyler joseph">
+                        </div>
+
+                        <div class="container">
+                            <div class="carousel-caption ">
+                                <h1>Tyler joseph</h1>
+                                <p class="opacity-75">
+                                    "He visitado esta página web y estoy impresionado por su diseño y contenido. La
+                                    navegación es intuitiva, y la creatividad se refleja en cada sección. Es evidente el
+                                    esfuerzo por conectar de manera auténtica con la audiencia, combinando tecnología y
+                                    arte de forma excepcional. Sin duda, un trabajo inspirador." – Tyler Joseph,
+                                    vocalista de Twenty One Pilots.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Los botones para pasar de imagen -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        <p>México</p>
-        <div>
-            <ul>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">Sobre Google</a></li>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">Publicidad</a></li>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">Negocios</a></li>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">Cómo funciona la Búsqueda</a></li>
+    <footer id="contacto" class="container-fluid bg-body-tertiary" >
+        <div class="py-3">
+            <nav class="nav justify-content-center">
+                <h4>"If you want true change, then walk differently" - Calle 13</h4>
+            </nav>
+            
+
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item fs-1">
+                    <a href="https://www.linkedin.com/in/ana-sof%C3%ADa-rodr%C3%ADguez-836273321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="nav-link px-2 text-body-secondary" target="_blank">
+                        <i class="bi bi-linkedin custom-blue"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item fs-1">
+                    <a href="https://github.com/Sofiana9024" class="nav-link px-2 text-body-secondary" target="_blank">
+                        <i class="bi bi-github custom-red"></i>
+                    </a>
+                </li>
+
+                <li class="nav-item fs-1">
+                    <a href="mailto:sofiana9024@gmail.com" class="nav-link px-2 text-body-secondary" target="_blank">
+                        <i class="bi bi-envelope-heart custom-yellow"></i>
+                    </a>
+                </li>
             </ul>
-            <ul>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">Privacidad</a></li>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">Condiciones</a></li>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">Preferencias</a></li>
-            </ul>
+            <p class="text-center text-body-secondary">© 2024 Sofía</p>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

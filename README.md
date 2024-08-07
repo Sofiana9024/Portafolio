@@ -4,14 +4,15 @@ Fue desarrollado con HTML, CSS y JS con el uso de el framework de UI, Bootstrap 
 La página es responsiva (adaptable a diferentes tamaños de pantalla) e incluye la presentación de la autora del proyecto.
 [Proyecto Desplegado (https://portafolio-lilac-nine-96.vercel.app/)](https://portafolio-lilac-nine-96.vercel.app/)
 ## Secciones de mi sitio
-![Presentación](assets/readme/1.png)
-![Habilidades](assets/readme/2.png)
-![Proyectos](assets/readme/3.png)
-![Testimonios](assets/readme/4.png)
-![Contacto](assets/readme/5.png)
+![Presentación](assets/readme/presentation.png)
+![Habilidades](assets/readme/skills.png)
+![Proyectos](assets/readme/projects.png)
+![Testimonios](assets/readme/testimonials.png)
+![Contacto](assets/readme/contact.png)
 ## Tecnologías
 * HTML
 * CSS
 * Bootstrap
+* JavaScript
 ---
-Desarrollado con 💜 por [Sofia](https://) en [TECHNOLOCHICAS PRO](https://tecnolochicas.mx/).
+Desarrollado con 💜 por [Sofia](https://github.com/Sofiana9024) en [TECHNOLOCHICAS PRO](https://tecnolochicas.mx/).
